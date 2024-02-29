@@ -1,0 +1,69 @@
+@use '~/../../scss/common/variables' as *;
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: inherit;
+	color: #666;
+}
+
+/**
+ * 폰트 크기 지정 10px ~ 20px
+ */
+@for $i from 10 through 20 {
+	.fz#{$i} {
+		font-size: #{$i}px;
+	}
+}
+
+/**
+ * 글자색
+ */
+$font-colors: (
+	'main': $mainColor,
+	'000': '#000',
+	'black': '#000',
+	'white': #fff,
+	'red': '#e83428',
+	'gray': '#dbdbdb',
+	'666': '#666',
+	'org': '#f96b0c',
+	'222': '#222',
+	'999': '#999',
+	'blue': '#6db3f2',
+);
+@each $k, $v in $font-colors {
+	.fc {
+		&_#{$k} {
+			color: #{$v};
+		}
+	}
+}
+
+*{-webkit-text-size-adjust:none}
+body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,th,td,input,textarea,button,select{
+	margin:0;
+	padding:0;
+	font-family:'Noto Sans KR', sans-serif,"Nanum Gothic","나눔 고딕","돋움",Dotum,"굴림",Gulim,"Apple Gothic","Apple SD Gothic Neo",Sans-serif;font-weight:normal
+}
+li{list-style:none}
+a{text-decoration:none}
+address,caption,em,var{font-style:normal;font-weight:normal}
+input,textarea,select{letter-spacing:normal}
+input,select{vertical-align:middle}
+ol,ul,dl{list-style:none}
+fieldset,img{border:0}
+legend,caption{display:none}
+img{border:0;vertical-align:top}
+hr{display:none}
+table{border-collapse:collapse;border-spacing:0}
+br{letter-spacing:normal}
+p{letter-spacing:normal}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{-webkit-box-shadow: 0 0 0px 1000px #fff inset !important}
+input[type="password"]{-webkit-appearance:none;-webkit-border-radius:0}
+button{cursor:pointer}
