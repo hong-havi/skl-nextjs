@@ -11,7 +11,7 @@ const nextConfig = {
    // prependData: `@use "public/styles/variables as *";`,
   },
   images: {
-      domains: ['cdn.domain.com']
+      domains: ['siwon-cdn.siwonschool.com']
   }
 };
 

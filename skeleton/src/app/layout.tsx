@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="ko">
       <Header></Header>
       <body>
-	      <div id="wrap">
+	      <div id="siwon_wrap">
           <Gnb></Gnb>
           <Suspense fallback={ <Loading></Loading> }>
             {children}

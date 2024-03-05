@@ -1,11 +1,11 @@
-#footer,
-#footer *,
-#footer *::before,
-#footer *::after {
+#siwon_footer,
+#siwon_footer *,
+#siwon_footer *::before,
+#siwon_footer *::after {
 	box-sizing: border-box;
 }
 
-#footer {
+#siwon_footer {
 	padding-bottom: 85px;
 
 	.container {
@@ -256,7 +256,7 @@
 
 // 반응형 css
 @media (max-width: 1030px) {
-	#footer {
+	#siwon_footer {
 		.ft_top {
 			.link_group li {
 				padding: 23px 6px;
@@ -283,7 +283,7 @@
 }
 
 @media (max-width: 920px) {
-	#footer {
+	#siwon_footer {
 		.m_hide,
 		.ft_logo {
 			display: none;

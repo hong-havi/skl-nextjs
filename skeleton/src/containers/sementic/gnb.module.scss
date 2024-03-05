@@ -1,11 +1,11 @@
-#header,
-#header *,
-#header *::before,
-#header *::after {
+#siwon_header,
+#siwon_header *,
+#siwon_header *::before,
+#siwon_header *::after {
 	box-sizing: border-box;
 }
 
-#header {
+#siwon_header {
 	height: 82px;
 	border-bottom: 1px solid #f0f0f0;
 
@@ -69,7 +69,7 @@
 
 // 반응형 css
 @media all and (max-width: 767px) {
-	#header {
+	#siwon_header {
 		.logo {
 			left: 15px;
 
